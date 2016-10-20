@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower i && typings i",
+    "postinstall": "bower i",
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start:dist": "npm run build && lite-server -c=dist-server-config.json",
+    "build": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^2.0.33",
     "concurrently": "^3.1.0",
     "lite-server": "^2.2.2",
+    "systemjs-builder": "^0.15.32",
     "typescript": "^2.0.3",
     "typings": "^1.4.0"
   }

@@ -7,10 +7,6 @@
         "removeComments": false,
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "typeRoots": [
-            "./typings"
-        ],
-        "types": [],
         "outDir": "build"
     },
     "exclude": [

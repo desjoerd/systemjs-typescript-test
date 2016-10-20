@@ -2,3 +2,7 @@ build/
 node_modules/
 typings/globals/**/*
 bower_components/
+
+npm-debug.log
+dist/**/*
+!dist/index.html
